@@ -17,30 +17,30 @@ public class Equipment extends AbstractAggregateRoot<Equipment> {
     private Long id;
 
     @Getter
-    @NotBlank
+    //@NotBlank
     @Size(max = 80)
     @Column(length = 80, nullable = false)
     private String name;
 
     @Getter
     @ManyToOne
-    @NotBlank
+    //@NotBlank
     @JoinColumn(name = "categoryId", insertable = false, updatable = false)
     private Category category;
 
     @Getter
-    @NotBlank
+    //@NotBlank
     @Column(nullable = false)
     private Long groupId;
 
     @Getter
-    @NotBlank
+    //@NotBlank
     @Size(max = 350)
     @Column(length = 350, nullable = false)
     private String description;
 
     @Getter
-    @NotBlank
+    //@NotBlank
     @Column(nullable = false)
     private String referenceImageUrl;
 
